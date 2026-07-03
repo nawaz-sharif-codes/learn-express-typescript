@@ -38,3 +38,9 @@ export interface UserResponse{
 export interface ErrorResponse{
     message : string
 }
+
+export interface ApiErrorResponse{
+    success : boolean,
+    message : string,
+    error? : ErrorResponse
+}
